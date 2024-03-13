@@ -1,0 +1,19 @@
+public class Item<K,T>{
+    private K key;
+    private T obj;
+
+    public Item(K key, T obj) {
+        this.key = key;
+        this.obj = obj;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "key=" + key +
+                "; keyType=" + key.getClass().getName() +
+                ", obj=" + obj +
+                "; objType=" + obj.getClass().getName() +
+                '}';
+    }
+}
